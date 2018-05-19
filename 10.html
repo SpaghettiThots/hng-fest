@@ -1,0 +1,213 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>11</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			body{
+				position: relative;
+			}
+
+			a{
+				text-decoration: none;
+				color: dodgerblue;
+				opacity: 0.8;
+			}
+
+			.top-bar{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				background-color: rgba(240, 240, 240, 1);
+				height: 3em;
+				font-family: 'Raleway', sans-serif;
+			}
+
+			.topbar-div{
+				width: auto;
+				margin-left: 1em;
+				margin-right: 1em;
+			}
+			
+			.search-div{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				background-color: dodgerblue;
+				height: 3em;
+				font-family: 'Raleway', sans-serif;
+			}
+
+			.search-input{
+				width: 50vh;
+				height: 2em;
+				padding-left: 2em;
+				padding-right: 2em;
+				text-align: center;
+			}
+			
+			.search-glass{
+
+			}
+			.search-input[placeholder]{
+				
+			}
+
+			.main a{
+				color: rgba(50, 50, 50, 1);
+			}
+
+			.social-unit{
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
+
+			.img{
+				width: 32px;
+				height: 32px;
+			}
+			
+			.service-icon{
+				width: 32px;
+				margin-left: 1em;
+				margin-bottom: -1.5em;
+			}
+
+			.service{
+				font-family: 'Raleway', sans-serif;
+				margin-left: 3.5em;
+				margin-bottom: 2em;
+			}
+
+			.service span{
+				margin-bottom: 2em;
+			}
+
+			/*.service-icon, .service{
+				display: inline-block;
+			}*/
+			
+			hr{
+				margin-top: 0.7em;
+				margin-right: 0.7em;
+				opacity: 0.4;
+			}
+
+			.footer-hr{
+				margin-left: 0;
+				margin-right: 0;
+				opacity: 1;
+			}
+
+			footer{
+				/*position: absolute;
+				bottom: 0;
+
+				*/display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+				font-family: 'Raleway', sans-serif;
+				color: dodgerblue;
+				margin-top: 1em;
+			}
+
+			footer div{
+				margin-left: 1em;
+				margin-right: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top-bar">
+			<div class="topbar-div blue"><a href="#"><span>Back</span></a></div>
+			<div class="topbar-div">Passwords</div>
+			<div class="topbar-div blue"><a href="#"><span>&#x271A;</span></a></div>
+		</div>
+		<div class="search-div">
+			<form action="#">
+				<input type="search" placeholder="Search" class="search-input">
+				<i class="fab fa-searchengin search-glass"></i>	
+			</form>
+		</div>
+
+		<div class="main">
+			<!-- Gmail -->
+			<a href="#">
+				<div class="social-unit">
+					<div class="service-icon">
+						<img src="img/gmail.png" alt="ser" class="img">
+					</div>
+					<div class="service"><span>Gmail</span><hr></div>
+				</div>
+			</a>
+
+			<!-- Facebook -->
+			<a href="#">
+				<div class="social-unit">
+					<div class="service-icon">
+						<img src="img/facebook.png" alt="ser" class="img">
+					</div>
+					<div class="service"><span>Facebook</span><hr></div>
+				</div>
+			</a>
+
+			<!-- Dropbox -->
+			<a href="#">
+				<div class="social-unit">
+					<div class="service-icon">
+						<img src="img/dropbox.png" alt="ser" class="img">
+					</div>
+					<div class="service"><span>Dropbox</span><hr></div>
+				</div>
+			</a>
+
+			<!-- Twitter -->
+			<a href="#">
+				<div class="social-unit">
+					<div class="service-icon">
+						<img src="img/twitter.png" alt="ser" class="img">
+					</div>
+					<div class="service"><span>Twitter</span><hr></div>
+				</div>
+			</a>
+
+			<!-- Instagram -->
+			<a href="#">
+				<div class="social-unit">
+					<div class="service-icon">
+						<img src="img/instagram.png" alt="ser" class="img">
+					</div>
+					<div class="service"><span>Instagram</span><hr></div>
+				</div>
+			</a>
+
+			<!-- Slack -->
+			<a href="#">
+				<div class="social-unit">
+					<div class="service-icon">
+						<img src="img/slack.png" alt="ser" class="img">
+					</div>
+					<div class="service"><span>Slack</span><hr></div>
+				</div>
+			</a>
+		</div>
+		<hr class="footer-hr">
+
+		<footer class="">
+			<div><a href="#"><span>Edit</span></a></div>
+			<div><a href="#"><span>New</span></a></div>
+		</footer>
+		
+	</body>
+</html>
