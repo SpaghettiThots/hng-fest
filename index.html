@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			a{
+				text-decoration: none;
+			}
+
+			.top-bar{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				background-color: rgba(240, 240, 240, 1);
+				height: 3em;
+				font-family: 'Raleway', sans-serif;
+			}
+
+			.topbar-div{
+				width: auto;
+				margin-left: 1em;
+				margin-right: 1em;
+			}
+
+			.blue{
+				color: DodgerBlue;
+			}
+
+			.box-div{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
+			.box{
+				width: 20vw;
+				height: 20vw;
+				border: 1px dotted rgba(255, 255, 255, 0);
+				border-radius: 1em;
+				margin: 1em;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.box .box-titles{
+				margin-left: -2.3em;
+			}
+
+			.box-a{
+				background-color: #FF3B30;
+				color: rgba(255, 255, 255, 1);
+			}
+
+			.box-b{
+				background-color: #79C8A6;
+				color: rgba(255, 255, 255, 1);
+			}
+
+			span i{
+				font-size: 10vw;
+				margin-bottom: 0.1em;
+				margin-right: -0.5em;
+			}
+
+			.box-c{
+				background-color: #82C6E6;
+				color: rgba(255, 255, 255, 1);
+			}
+
+			.box-d{
+				background-color: #096B91;
+				color: rgba(255, 255, 255, 1);
+			}
+
+			.box-e{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				border: 1px solid red;
+				opacity: 0.7;
+
+				font-family: 'Raleway', sans-serif;
+			}
+			.box-e span{
+				font-size: 2.5vw;
+				color: dodgerblue;
+			}
+
+			.box-titles{
+				display: block;
+				margin-left: 1em;
+				padding-top: 0.5em;
+			    font-family: 'Raleway', sans-serif;
+			   	font-size: 2vw;
+			    font-weight: 700; 
+			    color: rgba(255, 255, 255, 1);
+			}
+
+			/*.box-e .box-titles{
+				color: dodgerblue;
+			}*/
+
+			.cross{
+				color: dodgerblue;
+				font-size: 3em;
+				margin-bottom: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top-bar">
+			<div class="topbar-div blue">Back</div>
+			<div class="topbar-div">Pick a Category</div>
+			<div class="topbar-div blue">&#x271A;</div>
+		</div>
+		<div class="box-div" id="box-div">
+			<a href="#">
+				<div class="box box-a">
+					<span class="box-titles">Social</span>
+					<span><i class="fas fa-globe"></i></span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="box box-b">
+					<span class="box-titles">Passwords</span>
+					<span><i class="fas fa-shield-alt"></i></span>
+				</div>
+			</a>
+		</div>
+		<div class="box-div" id="box-div">
+			<a href="#">
+				<div class="box box-c">
+					<span class="box-titles">Emails</span>
+					<span><i class="fas fa-at"></i></span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="box box-d">
+					<span class="box-titles">Payments</span>
+					<span><i class="far fa-credit-card"></i></span>
+				</div>	
+			</a>
+		</div>
+		<div id="test" class="box-div"></div>
+		<div class="box-div">
+			<a href="#" id="add-category">
+				<div class="box box-e" id="add-box">
+					<span>Add Category</span>
+					<span class="cross">&#x271A;</span>
+				</div>
+			</a>
+		</div>
+
+		<!-- Add category -->
+		<script>
+			var add = document.getElementById("add-box");
+			add.addEventListener('click', addCategory);
+
+			function addCategory(){ 
+			  // create a new div element 
+			  var newDiv = document.createElement("div"); 
+			  // add desired category name 
+			  var categoryName = document.createTextNode("CategoryName"); 
+			  // add the text node to the newly created div
+			  newDiv.appendChild(categoryName);  
+
+			  // add the newly created element and its content into the DOM
+			  var container = document.getElementById("box-div"); 
+			  container.insertBefore(newDiv, add);
+			}
+		</script>
+	</body>
+</html>
